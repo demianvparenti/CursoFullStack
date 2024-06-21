@@ -1,0 +1,93 @@
+/* Ensure all margins and paddings are reset to avoid unexpected spaces */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style the form container */
+form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px; /* Add margin to separate from buttons */
+}
+
+/* Style the fieldset */
+fieldset {
+    border: none;
+}
+
+/* Style the labels and inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the buttons for switching styles */
+div {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    width: 150px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
