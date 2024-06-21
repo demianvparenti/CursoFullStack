@@ -1,63 +1,74 @@
-/* Ensure all margins and paddings are reset to avoid unexpected spaces */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Style the form */
-form {
-    margin: 0 auto; /* Center the form */
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #333; /* Matches your high contrast theme */
-    color: #fff;
-    max-width: 500px; /* Adjust as necessary */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     flex-direction: column;
 }
-
-/* Style the fieldset */
+h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
 fieldset {
     border: none;
-    margin: 0;
-    padding: 0;
 }
-
-/* Style the form elements */
-label, input, button {
-    margin-bottom: 10px;
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
 }
-
 input[type="text"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222; /* Matches your high contrast theme */
-    color: #fff;
 }
-
-/* Style the buttons */
+input[type="submit"] {
+    background-color: #ffc400;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid white;
+}
+input[type="submit"]:hover {
+    background-color: #d6a400;
+}
+div {
+    text-align: center;
+}
 button {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #ff0; /* Yellow background */
-    color: #000; /* Black text */
+    background-color: #ffc400;
+    color: black;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin: 5px;
+    width: 150px;
+    border: 2px solid white;
 }
 
 button:hover {
-    background-color: #ccc;
-}
-
-/* Ensure there is no large space under the form */
-div {
-    margin: 0;
-    padding: 0;
+    background-color: #d6a400;
 }
