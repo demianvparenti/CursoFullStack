@@ -12,30 +12,47 @@ presentación y en la misma presentación en alto contraste.-->
     <head>
         <title>Formulario</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/style-basic.css" id="style-link">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-basic.css" id="style-link">
+        <script src="script.js"></script>
     </head>
-
     <body>
         <h1>Formulario de Datos Personales</h1>
         <form method="post" autocomplete="on" id="personalForm">
             <fieldset>
                 <label for="fname">Nombre:</label>
-                <input type="text" id="fname" name="fname" minlength="3" autofocus required ><br>
+                <input type="text" name="fname" id="fname" minlength="3" maxlength="15" pattern="[A-Za-z']+" required placeholder="Tu nombre"><br>
                 <label for="lname">Apellido:</label>
-                <input type="text" id="lname" name="lname" minlength="3" required><br>
+                <input type="text" id="lname" name="lname" minlength="3" maxlength="20" pattern="[A-Za-z']+" required placeholder="Tu apellido"><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" minlength="15" maxlength="30" required placeholder="email@dominio.com"><br>
                 <label for="date">Fecha de nacimiento:</label>
                 <input type="date" id="date" name="date" required><br>
                 <label for="country">País de residencia:</label>
-                <input type="text" id="country" name="country" minlength="5" required><br>
-                <input type="submit" value="Enviar" name="enviar" id="submit">
+                <select name="country" id="country">
+                    <option value="" hidden>Elige una opción</option>
+                    <option value="arg">Argentina</option>
+                    <option value="bol">Bolivia</option>
+                    <option value="bra">Brasil</option>
+                    <option value="chi">Chile</option>
+                    <option value="col">Colombia</option>
+                    <option value="ecu">Ecuador</option>
+                    <option value="guy">Guyana</option>
+                    <option value="per">Perú</option>
+                    <option value="sur">Surinam</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="ven">Venezuela</option>
+                </select><br>
+                <input type="submit" value="Enviar" id="sumbit" name="submit">
             </fieldset>
         </form>
         <div>
             <button id="style1" onclick="setStandardStyle()">Estilo 1</button><br><br>
             <button id="style2" onclick="setHighContrastStyle()">Estilo de Alto Contraste</button>
         </div>
-        <script src="script.js"></script>
+        <footer>
+            <hr>
+            <p>Realizado por Demian Valentino Parenti</p>
+        </footer>
     </body>
 </html>

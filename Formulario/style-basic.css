@@ -55,6 +55,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+select[name="country"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 div {
     text-align: center;
 }
@@ -71,4 +78,14 @@ button {
 }
 button:hover {
     background-color: #0056b3;
+}
+footer{
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
 }
